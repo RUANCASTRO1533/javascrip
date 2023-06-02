@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>teoria javascript</title>
+</head>
+
+<body>
+
+    <h1> Teoria de Javascript</h1>
+    <button onclick="Botão1()">Botão</button>
+    <button onclick="Botãocorfundo()">alterar cor de fundo</button>
+    <button onclick="Botaonome()">qual e seu nome</button>
+    <br>
+    <button onclick="botaosomar()"> somando numeros</button>
+
+    <p id="res-soma">resultado</p>
+
+</body>
+
+
+
+
+
+<script>
+    /*comentarios em mulplas linhas
+    */
+    alert("ola mundo!!!")
+
+    console.log("ola mundo, esou utilizando o console")
+    function Botão1() {
+        alert("você clicou no botão ")
+    }
+
+    function Botãocorfundo() {
+        document.body.style.backgroundColor = "green"
+    }
+
+    function Botaonome() {
+        var nome2 = prompt("qual é seu nome")
+        confirm("olá" + nome + ", entendeu variavel?")
+        confirm(`olá  ${nome}  , entendeu variavel`)
+    }
+    //declarando variaveis 
+    // string - conjunto de caracteres - declarar com""ou''
+    var nome = "ruan"
+    var sobrenome = " castro"
+    //number - todo numero em js e do tipo number  - / declarar sem ""
+    var idade = 17
+    //bolean somente recebe true ou false
+    var aprovado = true
+    // tipo de exibição de mensagens no console 
+
+    console.error("esta e uma mensagem de erro")
+    console.warn("esta e uma mensagem de alerta")
+    console.info("Esta e uma mensagem de informaçao")
+
+    //ultilizamos o typeof para saber o tipo do lado 
+    console.log(typeof nome)
+
+    //concatenando strings com o +
+    console.log(nome + '' + sobrenome)
+
+    var n1 = 10
+    var n2 = 15
+    console.log(n1 + n2)
+    var n3 = "10"
+    var n4 = "15"
+    //ira concatenar "juntar" as 2 variaveis ("1015"
+    console.log(n3 + n4)
+    //se utilizarmos o + com string ele concatena se 
+    //utilizar com number some 
+    //uma variavel pode receber o valor de outra variavel
+    n1 + n2
+    console.log("n1 = " + n1 + ' eo n2 = ' + n2)
+    //para atribuir um valor decimal utilizar .  nao ,
+    var salario = 1290.85
+    //posso tambem somar a variavel com ela mesmo
+    salario = salario + 200
+    console.log(salario)
+    // antigamente parajuntar texto e variaveis faziamos assim 
+    console.log('ola, ' + nome + `voce tem` + idade + `anos`)
+    // hoje utilizamos o templatestring forma mais simples 
+    console.log(`ola, ${nome} voce tem ${idade} anos`)
+
+    function botaosomar() {
+        var nr1 = prompt("digite 1533:")
+        var nr2 = prompt("digite outro 1533")
+        
+
+        nr1 = parseFloat(nr1)
+        nr2 = Number(nr2)
+        //para converter uma string para numero sempre usar o number!!!
+        //receber valor1 de um prompt
+        console.log(typeof nr1)
+        //convertendo a variavel valor1 e 2 de string para number 
+        //podemos utilizar o parseInt()
+        
+        var soma = nr1 + nr2
+        
+        //alert(soma)
+        document.getElementById("res-soma").innerHTML +=
+            `<br> A soma de ${nr1} + ${nr2} = ${soma}`
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>

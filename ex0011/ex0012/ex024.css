@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-image: url(/img/gradiente-de-cor-de-reggae-abstrato-papel-de-parede-de-linha-listrada_206846-1135.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+        font-family: Arial, courier, serif;
+        background-color: #ffffffb7;
+        color: #000000;
+       
+        padding-left: 80px;
+}

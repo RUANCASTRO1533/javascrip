@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> resgistro de visita</h1>
+    <button onclick="botaopss()">cadastrar nova pessoa</button>
+    <p id="new">pessoas que passaram por aqui ...</p>
+
+</body>
+<script>
+
+function botaopss(){
+var pss = prompt("nome da nova pessoa")
+document.getElementById ("new").innerHTML +=
+`<br><br>&#x1F596  acabei de cadastrar <b>${pss}</b> no sistema`
+}
+
+</script>
+</html>
